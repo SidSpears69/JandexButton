@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.ya-share2__list_direction_vertical .ya-share2__title{
+   width: 0;
+   height: 0;
+   overflow: hidden;
+}
+/* Если нужен фиксированный блок*/
+/*.ya-share2__list_direction_vertical {
+    position: fixed;
+    margin-top: 20px;
+}*/
+.ya-share2__list_direction_vertical .ya-share2__item .ya-share2__badge {
+    padding: 3px;
+}
+.ya-share2 .ya-share2__list_direction_horizontal > .ya-share2__item {
+    position: relative;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.ya-share2__list_direction_horizontal {
+    max-width: 700px;
+}
+
+.ya-share2__list_direction_horizontal .ya-share2__item .ya-share2__icon {
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item > .ya-share2__link > .ya-share2__title {
+    display: inline;
+    font-size:0;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item > .ya-share2__link::after {
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    top: 12px;
+    font-size: 16px;
+    font-family: inherit;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_vkontakte > .ya-share2__link::after {
+    content: 'Поделиться';
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_vkontakte {
+    background-color: #48729e;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_facebook > .ya-share2__link::after {
+    content: 'Поделиться';
+}
+
+.ya-share2__list_direction_horizontal .ya-share2__item_service_facebook {
+ background-color: #3b5998;
+}
+
+.ya-share2__list_direction_horizontal .ya-share2__item_service_odnoklassniki > .ya-share2__link::after {
+    content: 'Класснуть';
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_odnoklassniki {
+    background-color: #eb722e;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_twitter > .ya-share2__link::after {
+    content: 'Твитнуть';
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_twitter {
+    background-color: #00aced;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_telegram > .ya-share2__link::after {
+    content: 'Отправить';
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_telegram {
+    background-color: #64a9dc;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_pinterest > .ya-share2__link::after {
+    content: 'Запинить';
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_pinterest {
+    background-color: #c20724;
+}
+
+.ya-share2__list_direction_horizontal .ya-share2__item_service_viber > .ya-share2__link::after {
+    content: 'Вайбернуть';
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_viber {
+    background-color: #7b519d;
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_whatsapp > .ya-share2__link::after {
+    content: 'Ватсапнуть';
+}
+.ya-share2__list_direction_horizontal .ya-share2__item_service_whatsapp {
+    background-color: #65bc54;
+}
+.ya-share2__badge .ya-share2__counter::before {
+    background: none;
+}
+.ya-share2__badge .ya-share2__counter{
+    position: absolute;
+    top: 0px;
+    right: -5px;
+}
+.ya-share2__link .ya-share2__badge {
+    position: static;
+}
+@media (max-width: 820px) {
+   .ya-share2 .ya-share2__list_direction_vertical {
+       display: none;
+   }
+}
